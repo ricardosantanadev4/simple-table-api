@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import br.com.spring.simpletableapi.services.DBService;
+import br.com.spring.simpletableapi.service.DBService;
 
 @Configuration
 @Profile(value = "test")
@@ -17,7 +17,7 @@ public class TestProfile {
 	}
 
 	@Bean
-	public Boolean instaciaDB() {
-		return this.dbService.instanciDB();
+	public Boolean instanciaDB() {
+		return this.dbService.instanciaDB();
 	}
 }
